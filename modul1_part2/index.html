@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists, Forms, Tables</title>
+
+    <style>
+        table, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            width: 75%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="unordered">
+            <h3>My Favorites</h3>
+            <ul>
+                <li> Movies
+                    <ul>
+                        <li>Your Lie in April</li>
+                        <li>Kung Fu Panda</li>
+                        <li>Star Wars</li>
+                        <li>Avengers Assemble</li>
+                        <li>Tom & Jerry</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--div.description>dl>dt+dd-->
+    <div class="description">
+        <dl>
+            <dt>bakit ka namamakyu!</dt>
+            <dd>bakit nga ba? you tell me!</dd>
+        </dl>
+    </div>
+    <!--div.table>table>thead>tr>th*4^^tbody>tr*4>rd*4-->
+    <div class="table">
+        <table>
+            <thead>
+                <!--tr[colspan=4]>th{My Schedule for 3rd Semester}-->
+                <tr colspan="4">
+                    <th>My Schedule for 3rd Semester </th>
+
+                </tr>
+
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Course</th>
+                    <th>Room</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <rd>Monday</rd>
+                    <rd>7:00 - 8:50</rd>
+                    <rd>IT0043L</rd>
+                    <rd>F1101</rd>
+                </tr>
+                <tr>
+                    <rd></rd>
+                    <rd></rd>
+                    <rd></rd>
+                    <rd></rd>
+                </tr>
+                <tr>
+                    <rd></rd>
+                    <rd></rd>
+                    <rd></rd>
+                    <rd></rd>
+                </tr>
+                <tr>
+                    <rd></rd>
+                    <rd></rd>
+                    <rd></rd>
+                    <rd></rd>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+    <!--div.login>form:post>div.form-group*2>label+input-->  
+    <div class="login">
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="username">User Name: </label>
+                <input type="text" name="username" placeholder= "Enter Your Username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password: </label>
+                <input type="text" name="password">
+            </div>
+        </form>
+    </div>
+    <!--div>button:submit{Log In}-->
+    <!--submit button/ clear button/-->
+    <div>
+        <button type="submit">Log In</button>
+    </div>
+    <!--When using radio type, it should have name and value {selected}-->
+    <!--When using checkbox, it should also have name and value {check}-->
+
+</body>
+</html>
