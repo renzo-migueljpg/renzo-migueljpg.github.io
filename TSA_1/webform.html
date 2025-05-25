@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Web Form with Nested Lists</title>
+</head>
+<body>
+    
+  <h2>Contact Form</h2>
+  <h2>Module 2: HTML</h2>
+  <h3>Technical Summative Assessment</h3>
+  <p>Renzo Miguel R. Espino<br> IT0043L <br> TX03</p>
+  <p>Recreate the following basic web form in HTML web page using nested list. <br> Do not forget the basic HTML structure and all necessary meta tags.</p>
+
+  <form><br>
+    <ul type="none"> 
+      <li>
+        <label>Your Name*</label>
+        <ul type="none">
+          <li><input type="text" name="name" required size="30"></li>
+        </ul>
+      </li>
+      <li>
+        <label>Email*</label>
+        <ul type="none">
+          <li><input type="email" name="email" required size="30"></li>
+        </ul>
+      </li>
+      <li>
+        <label>Contact No.*</label>
+        <ul type="none">
+          <li><input type="tel" name="contact" required></li>
+        </ul>
+      </li>
+      <li>
+        <label>Message</label>
+        <ul type="none">
+          <li><textarea name="message" rows="4" cols="40"></textarea></li>
+        </ul>
+      </li>
+    </ul>
+    <p>required field*</p>
+    <input type="submit" value="Send">
+  </form>
+</body>
+</html>
