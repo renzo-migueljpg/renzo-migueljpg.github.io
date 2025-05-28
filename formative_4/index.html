@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Student Registration Form</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="external_registration.css" />
+    
+</head>
+<body>
+    
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Student Registration Form</h2>
+  <h5>Formative 4 | Renzo Espino | Bootstrap</h5>
+  <form>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="studentName" class="form-label">Student Name</label>
+        <input type="text" class="form-control" id="studentName" required>
+      </div>
+      <div class="col-md-6">
+        <label for="dob" class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" id="dob" required>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="mobile" class="form-label">Mobile Number</label>
+        <input type="tel" class="form-control" id="mobile" required>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="fatherName" class="form-label">Father's Name</label>
+        <input type="text" class="form-control" id="fatherName" required>
+      </div>
+      <div class="col-md-6">
+        <label for="motherName" class="form-label">Mother's Name</label>
+        <input type="text" class="form-control" id="motherName" required>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-4">
+        <label for="gender" class="form-label">Gender</label>
+        <select class="form-select" id="gender" required>
+          <option value="">Choose...</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="year" class="form-label">Year</label>
+        <select class="form-select" id="year" required>
+          <option value="">Select year</option>
+          <option>1st Year</option>
+          <option>2nd Year</option>
+          <option>3rd Year</option>
+          <option>4th Year</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="course" class="form-label">Course</label>
+        <select class="form-select" id="course" required>
+          <option value="">Select course</option>
+          <option>Computer Science</option>
+          <option>Information Technology</option>
+          <option>Business Administration</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="schoolYear" class="form-label">School Year</label>
+        <select class="form-select" id="schoolYear" required>
+          <option value="">Select school year</option>
+          <option>2024-2025</option>
+          <option>2025-2026</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="school" class="form-label">School</label>
+        <select class="form-select" id="school" required>
+          <option value="">Select school</option>
+            <option>FEU Tech</option>
+            <option>FEU Manila</option>
+            <option>FEU Alabang</option>
+            <option>FEU Diliman</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="nationality" class="form-label">Nationality</label>
+      <input type="text" class="form-control" id="nationality" required>
+    </div>
+
+    <div class="mb-4">
+      <label for="address" class="form-label">Home Address</label>
+      <input type="text" class="form-control" id="address" required>
+    </div>
+
+   <div class="text-center">
+  <button type="submit" class="btn custom-button">Register</button>
+</div>
+  </form>
+</div>
+
+</body>
+</html>
