@@ -12,7 +12,7 @@ body {
   margin: auto;
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  border-top: 8px solid #ffaf38; /* Simple color highlight */
+  border-top: 8px solid #ffaf38; 
 }
 
 h2 {
