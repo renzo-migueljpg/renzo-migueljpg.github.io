@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS Infographic - [Lord Eiryll]</title>
+    <style>
+        /* Internal CSS Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #226827, #226827);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        
+        h2 {
+            color: #226827;
+            border-bottom: 2px solid #226827;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        
+        .infographic {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .info-card {
+            flex: 1 1 300px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .other-pic {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin: 0 auto 20px;
+            margin-left: 80px; 
+        }
+        
+        .favorites {
+            background-color: #f0f8ff;
+        }
+        
+        .story {
+            background-color: #fff0f5;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: #226827;
+        }
+        
+        .quote {
+            font-style: italic;
+            text-align: center;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #226827;
+            margin: 20px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .infographic {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Internal CSS Infographic</h1>
+            <p>Friends since Junior Highschool</p>
+        </header>
+        
+        <div class="infographic">
+            <!-- Profile -->
+            <div class="info-card">
+                <img src="assets/eiryll_1.jpg" alt="[Lord Eiryll Tampoc]" class="profile-pic">
+                <h2>[Lord Eiryll Tampoc]</h2>
+                <p><span class="highlight">Their Nickname:</span> ["Poc"]</p>
+                <p><span class="highlight">My Nickname to them:</span> ["Zo"]</p>
+                <p><span class="highlight">Brithday:</span> [March 2004]</p>
+    
+            </div>
+            
+            <!-- Favorites -->
+            <div class="info-card favorites">
+                <h2>Favorites</h2>
+                <p><span class="highlight">Color:</span> [Green]</p>
+                <p><span class="highlight">Food:</span> [Birriani]</p>
+                <p><span class="highlight">Movie:</span> [Kung Fu Panda]</p>
+                <p><span class="highlight">Song:</span> [Alam mo ba girl - Hev Abi]</p>
+                <p><span class="highlight">Hobby:</span> [Play Billiards]</p>
+
+            </div>
+            
+            <!-- Memories -->
+            
+        </div>
+        
+        <!-- Story Section -->
+        <div class="info-card story">
+            <h2>Our Story</h2>
+            <p>We first met in 2017 at our school from junior high. I remember he first approached me to ask questions about what section I belong to on grade 7.</p>
+            
+            <p>Over time, we've been hanging out together because we play basketball every adter class. Some of our best memories include being disciplined by the guidance of our school .</p>
+            
+            <div class="quote">
+                Favorite quote  
+                "Hindi mahalaga ang mag wagi, ang mahalaga ay nakibahagi"
+            </div>
+            
+            
+            <p>Looking forward to many more years and memories together!</p>
+
+             <img src="assets/eiryll_2.jpg" class="other-pic">
+             <img src="assets/eiryll_3.jpg" class="other-pic">
+             <img src="assets/eiryll_4.jpg" class="other-pic">
+        </div>
+        
+        <footer>
+            <p>Created with ♥ by [Renzo Miguel Espino] | [2025]</p>
+        </footer>
+    </div>
+</body>
+</html>
